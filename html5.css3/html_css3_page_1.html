@@ -52,6 +52,9 @@ table {
 }
         /* 초기화 끝 */
 
+        body {
+            min-width: 960px;
+        }
         /* 헤더 */
         #main_header {
             background-image: url(http://placehold.it/960x400) ;
@@ -85,9 +88,14 @@ table {
             font-size: 20px;
         }   
 
-        /* 섹션 */
+        #main_gnb > ul > li > a:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        /* 콘텐츠 */
         #content > section {
-            display: block ;
+            padding: 50px 100px;
         }
 
         #content > section > div {
@@ -99,13 +107,14 @@ table {
 
         #content > section > div > ul > li {
             float: left;
-            width: 33.33%;
+            width: 25%;
         }
 
         #content > section > div > ul > li > a {
             width: 300px;
             height: 300px;
         }
+
 
         /* 푸터 */
         #main_footer {
@@ -136,12 +145,14 @@ table {
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
+                    <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                 </ul>
             </div>
             <br />
             <br />
             <div id="box_2">
                 <ul>
+                    <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
@@ -154,15 +165,15 @@ table {
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                     <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
+                    <li><a harf="#"><img src="http://placehold.it/300x300" alt="#"></a></li>
                 </ul>
             </div>
-            <br />
-            <br />
         </section>
     </div>
     <footer id="main_footer">
         <address>인천광역시 남동구 1234-12</address>
         <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</address>
+        <address>032-452-2342</address>
     </footer>
 </body>
 </html>
