@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var user_num = prompt("학년을 입력하세요","");
+        var user_test = prompt("시험 점수를 입력하세요","");
+
+        if(user_test <= 100 && user_test >= 0 ) { //100과 같거나 적고 0과 같거나 크면 실행
+            if(user_num == 4) { //4학년이면 실행
+                if (user_test >= 70) { //70보다 같거나 크면 실행
+                    document.write("합격");
+                } else {// 아니면
+                document.write("불합격");
+                }
+            } if (user_num < 4 && user_num > 4) {
+                if (user_test >= 60) {
+                    document.write("합격");
+                } else {
+                    document.write("불합격");
+                }
+            }
+            else {
+                alert("에러입니다.");
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
