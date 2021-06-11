@@ -10,7 +10,7 @@
     <script>
         var user_num = prompt("학년을 입력하세요","");
         var user_test = prompt("시험 점수를 입력하세요","");
-
+        /*
         if(user_test <= 100 && user_test >= 0 ) { //100과 같거나 적고 0과 같거나 크면 실행
             if(user_num == 4) { //4학년이면 실행
                 if (user_test >= 70) { //70보다 같거나 크면 실행
@@ -18,7 +18,7 @@
                 } else {// 아니면
                 document.write("불합격");
                 }
-            } if (user_num < 4 && user_num > 4) {
+            } else (user_num < 4 || user_num > 4) {
                 if (user_test >= 60) {
                     document.write("합격");
                 } else {
@@ -30,6 +30,26 @@
                 location.reload();
             }
         }
+        */
+
+        if (0 <= user_test && user_test <= 100) {
+            if (user_num == 4) {
+                if(user_test >= 70) {
+                    document.write("합격");
+                } else {
+                    document.write("불합격");
+                }
+            } else {
+                if(user_test >= 60) {
+                    document.write("합격");
+                } else {
+                    document.write("불합격");
+                }
+            }
+        } else {
+                alert("에러입니다.");
+                location.reload();
+            }
     </script>
 </body>
 </html>

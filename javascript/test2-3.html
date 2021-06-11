@@ -11,6 +11,22 @@
         var num1 = prompt("정수를 입력하세요","");
         var num2 = prompt("정수를 입력하세요","");
         var num3 = prompt("정수를 입력하세요","");
+        var sum = Number(num1) + Number(num2) + Number(num3);
+        var avg = sum / 3;
+
+        var max = num1;
+        var min = num1;
+
+        //최댓값
+        if (max < num2) max = num2;
+        if (max < num3) max = num3;
+
+        //최솟값
+        if (min < num2) min = num2;
+        if (min < num3) min = num3;
+
+        var mag = "최대값 : " + max + ", 최솟값 : " + min +", 합계 : " + sum + ", 평균 : " +avg ;
+
 
     </script>
 </body>
