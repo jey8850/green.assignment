@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green { color: green;} 
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eligendi, corporis voluptatibus soluta sint nostrum ea minus cum aut explicabo nemo, sed rem vel laborum totam vero molestias voluptate laudantium?</p>
+    <input type="button" value="Click to new division" onclick="new_div()" />
+    <script src="../jquery-3.6.0.min.js"></script>
+    <script>
+        //$("input").click(function(){
+        //    $("<p>lorem ipsum</p>").appendTo("body");
+        //});
+        //$("p").addClass("green");
+
+        function new_div() {
+            var test = {
+                id: "div",
+                class: "divclass",
+                css: {
+                    "color":"green"
+                }
+            };
+            var $div = $("<div>",test);
+            $div.html("New Division");
+            $("body").append($div);
+        }
+    </script>
+</body>
+</html>

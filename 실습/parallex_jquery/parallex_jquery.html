@@ -63,7 +63,26 @@
                             .css("margin-top", ($(this).height()/2 * -1) + "px");
                 });
             });
+        
+        //1초마다 이미지 리사이즈 실행(비추천)
+        setTimeout(function(){
+            $(window).resize();
+        }, 1000);
+
+        //패럴렉스 실행
+        $(".bg-holder").parallaxScroll({
+            fiction: 0.3
         });
+
+        //둘러보기 마우스 오버시 이미지 변경
+        $(".icon img").hover(function(){
+            $(this).attr("src", $(this).attr("src").replace(".png","_over.png")); 
+        }, function(){
+            $(this).attr("src", $(this).attr("src").replace("_over.png", ".png"));
+        });
+
+    });
+
     </script>
 </body>
 </html>
