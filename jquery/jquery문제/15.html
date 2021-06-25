@@ -7,16 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-    </ul>
+    <div style="height: 75px;
+    width: 200px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: #f3e2a9;"></div>
+    <p></p>
     <script src="../jquery-3.6.0.min.js"></script>
     <script>
-        $('li').each(function(index, elem) {
-            $(elem).prepend(''+index+':');
-        });
+
+        var left = $("div").position().left;
+        var top = $("div").position().top;
+        
+        $("p").text("left: "+left + ", top : ",top);
     </script>
 </body>
 </html>

@@ -9,14 +9,22 @@
 <body>
     <ul>
         <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
+        <li>Moogodb Tutorial</li>
+        <li>Python Tutorial</li>
     </ul>
     <script src="../jquery-3.6.0.min.js"></script>
     <script>
-        $('li').each(function(index, elem) {
-            $(elem).prepend(''+index+':');
-        });
+        //$(function(){
+        //    var list = $("li:nth-child(2)").text();
+        //    console.log(list);
+        //});
+
+        var listItem = $('li');
+        var rawListItem = listItem[1];
+        var html = rawListItem.innerHTML;
+        console.log(html);
+
+        
     </script>
 </body>
 </html>

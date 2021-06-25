@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-    </ul>
+    <a href="http://www.google.com/">google</a>
     <script src="../jquery-3.6.0.min.js"></script>
     <script>
-        $('li').each(function(index, elem) {
-            $(elem).prepend(''+index+':');
-        });
+        $("a").attr("href","http://www.naver.com");
+        $("a").text("naver");
+
     </script>
 </body>
 </html>

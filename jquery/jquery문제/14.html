@@ -7,16 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-        <li>Html Tutorial</li>
-    </ul>
+    <p>jQuery Exercises</p>
+    <div style= "height: 75px;
+    width: 200px;
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid blue;
+    background-color: #81daf5;"></div>
     <script src="../jquery-3.6.0.min.js"></script>
     <script>
-        $('li').each(function(index, elem) {
-            $(elem).prepend(''+index+':');
-        });
+        var height = $("div").css("height");
+        var width = $("div").css("width");
+
+        console.log(height);
+        console.log(width);
+
     </script>
 </body>
 </html>
