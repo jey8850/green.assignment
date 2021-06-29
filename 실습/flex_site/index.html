@@ -115,7 +115,19 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script>
-
+        $(function() {
+            var trigger = $("#trigger");
+            var menu = $('nav ul');
+            $(trigger).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            
+            $('.bxslider').bxSlider({
+                auto:true,
+                autoHover:true,
+            });
+        });
     </script>
 </body>
 </html>
