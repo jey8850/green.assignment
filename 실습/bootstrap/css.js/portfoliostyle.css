@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* 사이드바 */
+.sidenav {
+    background-color: #f1f1f1;
+    /*position: fixed;*/
+    display: block;
+    width: 25%;
+    height: 100%;
+    margin-left: -20px;
+    text-align: center;
+    
+}
+
+.sidenav > span > h4 {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.sideimg {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+/* 본문 */
+.page {
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.page img {
+    margin: 50px;
+}
+
+.page h1,h2,h3,h4,h5,h6 {
+    text-decoration: none;
+    text-align: center;
+}
+
+#about,#portfolio,#contact {
+    margin-top: 100px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.icon > li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.icon > .mail {
+    margin-left: -30px;
+}
