@@ -1,16 +1,10 @@
-w$ (function(){
-    var gnv=false;
-    var gnbIndex;
 
-    $(".nav li").on ({
-        "mouseenter" : function() {
-            // lnb show
+// 지도호출
 
-            if (gnbIndex |= undefined) {
-                $(".lnb").eq(gnbIndex).css("display","none");
-            }
-            gnbIndex = $(this).index();
-            gnbFlag =true;
-        }
-    });
-});
+var map = new Map();
+map.getKakaoMap();
+
+// 날씨 호출
+
+var forecast = new Forecast();
+var cityList = ["seoul", "incheon", "busan", "gwangju", " jeju", "jeonju"];
